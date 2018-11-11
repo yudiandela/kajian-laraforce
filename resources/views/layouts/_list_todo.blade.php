@@ -28,3 +28,5 @@
     @endforeach
     </tbody>
 </table>
+
+{{ $todos->links() }}

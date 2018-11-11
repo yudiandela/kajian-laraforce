@@ -15,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(Todo $todo)
     {
-        View::share('todos', $todo->all());
+        View::share('todos', $todo->paginate(5));
     }
 
     /**
