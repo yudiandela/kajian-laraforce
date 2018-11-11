@@ -42,9 +42,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('task.index') }}">{{ __('Task') }}</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('todo.index') }}">{{ __('Todo') }}</a>
-                        </li>
                         @guest
                             <li class="nav-item">
                                 @if (Route::has('login'))
@@ -57,6 +54,9 @@
                                 @endif
                             </li>
                         @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('todo.index') }}">{{ __('Todo') }}</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>

@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('task', 'TaskController@index')->name('task.index');
 
 Route::resource('todo', 'TodoController')->except(['create', 'show']);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

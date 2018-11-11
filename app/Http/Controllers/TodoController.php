@@ -8,6 +8,14 @@ use Illuminate\Http\Request;
 class TodoController extends Controller
 {
     /**
+     * Middleware untuk route todo
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return void

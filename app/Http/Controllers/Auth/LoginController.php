@@ -36,4 +36,16 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    /**
+     * Username Customization
+     * link referensi
+     * https://laravel.com/docs/5.7/authentication#included-authenticating
+     *
+     * @return string
+     */
+    public function username()
+    {
+        return 'username';
+    }
 }
