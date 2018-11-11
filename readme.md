@@ -20,3 +20,7 @@ Metode Sharing Data With All Views Bisa di lihat di docs resmi laravel sendiri [
 * Pengenalan Auth Basic Laravel : referensi [disini](https://laravel.com/docs/5.7/authentication#authentication-quickstart)
 * Login dengan username : referensi [disini](https://laravel.com/docs/5.7/authentication#included-authenticating)
 * Paginate Halaman TodoList : referensi [disini](https://laravel.com/docs/5.7/pagination)
+
+### Catatan
+
+Saya membuat paginate langsung dari AppServiceProviders
