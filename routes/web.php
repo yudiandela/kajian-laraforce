@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('task', 'TaskController@index');
+Route::get('task', 'TaskController@index')->name('task.index');
+
+Route::resource('todo', 'TodoController')->except(['create', 'show']);
