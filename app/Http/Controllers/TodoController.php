@@ -64,6 +64,10 @@ class TodoController extends Controller
      */
     public function update(Request $request, Todo $todo)
     {
+        $request->validate([
+            'todo' => ['required', 'string', 'min:6']
+        ]);
+
         $todo->name = $request->todo;
         $todo->save();
 

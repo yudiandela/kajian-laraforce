@@ -9,7 +9,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="text" class="form-control{{ $errors->has('todo') ? ' is-invalid' : '' }}" name="todo">
+                        <input type="text" class="form-control{{ $errors->has('todo') ? ' is-invalid' : '' }}" name="todo" value="{{ old('todo') }}">
 
                         @if ($errors->has('todo'))
                             <span class="invalid-feedback" role="alert">
