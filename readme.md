@@ -23,4 +23,7 @@ Metode Sharing Data With All Views Bisa di lihat di docs resmi laravel sendiri [
 
 ### Catatan
 
-Saya membuat paginate langsung dari AppServiceProviders
+* Saya membuat paginate langsung dari AppServiceProviders
+* Design Halaman index
+* Old data di inputan new todo
+* Validasi inputan update
