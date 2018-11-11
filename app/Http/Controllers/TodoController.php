@@ -71,6 +71,6 @@ class TodoController extends Controller
     public function destroy(Todo $todo)
     {
         $todo->delete();
-        return redirect()->back();
+        return redirect()->route('todo.index');
     }
 }
