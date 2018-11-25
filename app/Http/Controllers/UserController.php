@@ -91,7 +91,17 @@ class UserController extends Controller
      */
     public function dataUsers()
     {
-        $users = User::all();
-        return Datatables::of($users)->toJson();
+        $model = User::all();
+        return Datatables::of($model)
+                ->addIndexColumn()
+                ->addColumn('action', function ($model) {
+                    return view('layouts._btn_action', [
+                        'model'      => $model,
+                        'url_edit'   => route('users.edit', $model->id),
+                        'url_delete' => route('users.destroy', $model->id)
+                    ]);
+                })
+                ->rawColumns(['action'])
+                ->toJson();
     }
 }

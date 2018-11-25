@@ -22,6 +22,6 @@ Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('todo', 'TodoController')->except(['create', 'show']);
-    Route::resource('users', 'UserController')->only('index');
+    Route::resource('users', 'UserController');
     Route::get('/data/users', 'UserController@dataUsers')->name('data.users');
 });
