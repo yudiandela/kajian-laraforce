@@ -27,3 +27,13 @@ Metode Sharing Data With All Views Bisa di lihat di docs resmi laravel sendiri [
 * Design Halaman index
 * Old data di inputan new todo
 * Validasi inputan update
+
+## Hari Keempat
+
+* Menambah Package Laravel/Datatables : referensi [disini](https://github.com/yajra/laravel-datatables)
+* Menampilkan data seluruh user dengan datatable
+
+### Data Dummy
+
+* Membuat seeder : referensi [disini](https://laravel.com/docs/5.7/seeding#writing-seeders)
+* Membuat Factory : referensi [disini](https://laravel.com/docs/5.7/database-testing#writing-factories)
